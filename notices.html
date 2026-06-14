@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notices — Campus Pinboard</title>
+  <meta name="description" content="Browse and search all campus notices: events, lost & found, academic alerts and club announcements.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-brand"><span class="pin-dot"></span>Campus Pinboard</a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" id="navToggle">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="notices.html" class="active">Notices</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="page-hero">
+      <h1>The Board</h1>
+      <p>Search and filter every active notice on campus</p>
+    </div>
+
+    <div class="filter-bar">
+      <input type="search" id="searchInput" placeholder="Search notices by keyword..." aria-label="Search notices">
+      <select id="categoryFilter" aria-label="Filter by category">
+        <option value="all">All categories</option>
+        <option value="event">Events</option>
+        <option value="academic">Academic</option>
+        <option value="lost-found">Lost &amp; Found</option>
+        <option value="club">Clubs</option>
+        <option value="urgent">Urgent</option>
+      </select>
+    </div>
+
+    <p class="no-results" id="noResults">No notices match your search. Try a different keyword or category.</p>
+
+    <div class="board">
+      <div class="board-grid" id="noticeGrid">
+
+        <article class="pin-card rotate-1 pin-blue" data-category="event" data-text="tech club hackathon sign-ups open computing lab teams build prizes">
+          <span class="tag event">Event</span>
+          <h3>Tech Club Hackathon Sign-ups Open</h3>
+          <p class="meta">🗓️ Closes Friday · Computing Lab</p>
+          <p>Form teams of up to 4 and build something useful in 24 hours. Prizes for top 3 teams plus internship referrals from sponsors.</p>
+        </article>
+
+        <article class="pin-card rotate-3 pin-yellow" data-category="lost-found" data-text="lost blue backpack library laptop keys reward">
+          <span class="tag lost-found">Lost &amp; Found</span>
+          <h3>Lost: Blue Backpack near Library</h3>
+          <p class="meta">📍 Main Library · Reported Tuesday</p>
+          <p>Navy blue backpack with a laptop and a set of keys inside. If found, please drop it off at the Student Affairs office — reward offered!</p>
+        </article>
+
+        <article class="pin-card rotate-2 pin-sage" data-category="academic" data-text="mid-semester exam timetable departments faculty notice id card">
+          <span class="tag academic">Academic</span>
+          <h3>Mid-Semester Exam Timetable Released</h3>
+          <p class="meta">📍 Faculty Notice Boards · All Levels</p>
+          <p>Check the timetable for your department on the Notices page. Bring your ID card and arrive at least 15 minutes early to your exam venue.</p>
+        </article>
+
+        <article class="pin-card rotate-4 pin-red" data-category="club" data-text="drama society auditions arts theatre script production">
+          <span class="tag club">Club</span>
+          <h3>Drama Society Auditions This Weekend</h3>
+          <p class="meta">📍 Arts Theatre · Sat &amp; Sun, 10 AM</p>
+          <p>No experience needed! We're casting for our end-of-year production. Come ready to read a short script and have fun with us.</p>
+        </article>
+
+        <article class="pin-card rotate-5 pin-blue" data-category="event" data-text="inter-hall football finals main pitch trophy snacks closing ceremony">
+          <span class="tag event">Event</span>
+          <h3>Inter-Hall Football Finals</h3>
+          <p class="meta">📍 Main Pitch · Today, 4:00 PM</p>
+          <p>Cheer on your hall as the top two teams battle for the trophy. Free entry, snacks on sale at the gate. Don't miss the closing ceremony right after!</p>
+        </article>
+
+        <article class="pin-card rotate-1 pin-yellow" data-category="lost-found" data-text="found student id card cafeteria collect security desk">
+          <span class="tag lost-found">Lost &amp; Found</span>
+          <h3>Found: Student ID Card at Cafeteria</h3>
+          <p class="meta">📍 Main Cafeteria · Reported Today</p>
+          <p>A student ID card was found near the cafeteria checkout. Owner can collect it from the security desk at the main gate with proof of identity.</p>
+        </article>
+
+        <article class="pin-card rotate-3 pin-sage" data-category="academic" data-text="library extended hours late night study revision week opening times">
+          <span class="tag academic">Academic</span>
+          <h3>Library Extended Hours for Revision Week</h3>
+          <p class="meta">📍 Main Library · Next Week</p>
+          <p>The library will stay open until midnight throughout revision week to support exam preparation. Quiet study floors are on levels 2 and 3.</p>
+        </article>
+
+        <article class="pin-card rotate-2 pin-red" data-category="urgent" data-text="water supply maintenance interruption hostels notice">
+          <span class="tag urgent">Urgent</span>
+          <h3>Water Supply Interruption Notice</h3>
+          <p class="meta">📍 All Hostels · Wednesday, 8 AM – 2 PM</p>
+          <p>Scheduled maintenance will interrupt water supply to all hostel blocks. Please store water in advance. We apologise for the inconvenience.</p>
+        </article>
+
+        <article class="pin-card rotate-4 pin-blue" data-category="club" data-text="ngo volunteer outreach community clean-up sign up charity">
+          <span class="tag club">Club</span>
+          <h3>NGO Club: Community Clean-Up Volunteers Needed</h3>
+          <p class="meta">📍 Meet at Gate 2 · Saturday, 7 AM</p>
+          <p>Join the campus NGO club for a community clean-up around the surrounding neighbourhood. Gloves and refreshments provided — sign up at the club desk.</p>
+        </article>
+
+      </div>
+    </div>
+
+    <h2 class="section-title">Quick Tool: Free Time Estimator</h2>
+    <p class="section-sub">Plan your week around classes and events</p>
+
+    <div class="board">
+      <div class="calculator-layout">
+        <article class="calc-explanation">
+          <span class="tag academic">How it works</span>
+          <h3>Estimate your weekly free time</h3>
+          <p>The calculator starts with the 168 hours in a week. It subtracts your weekly class hours and assumes 8 hours of sleep each night, which is 56 hours per week.</p>
+          <p class="calc-formula">Free time = 168 − class hours − 56 sleep hours</p>
+          <p><strong>Example:</strong> 4 class hours × 5 days gives 20 class hours. Your estimated free time is 168 − 20 − 56 = 92 hours.</p>
+          <p class="calc-note">This estimate includes studying, travelling, meals, recreation and other activities.</p>
+        </article>
+
+        <div class="form-card">
+          <div class="calc-grid">
+            <div class="form-group">
+              <label for="hoursPerDay">Hours of class per day</label>
+              <input type="number" id="hoursPerDay" min="0" max="24" step="0.5" value="4">
+            </div>
+            <div class="form-group">
+              <label for="daysPerWeek">Class days per week</label>
+              <input type="number" id="daysPerWeek" min="0" max="7" step="1" value="5">
+            </div>
+          </div>
+          <button class="btn" id="calcBtn" type="button">Calculate free time</button>
+          <div class="calc-result" id="calcResult" aria-live="polite">
+            Enter your numbers and press calculate.
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-note">
+      <div class="footer-brand">
+        <span class="footer-pin" aria-hidden="true"></span>
+        <p class="footer-kicker">One last note</p>
+        <p class="footer-title">Stay curious. Stay connected.</p>
+        <p class="footer-copy">A student-made space for the notices that keep campus moving.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="notices.html">The Board</a>
+        <a href="team.html">Group C</a>
+        <a href="contact.html">Pin a Message</a>
+      </nav>
+      <div class="footer-signoff">
+        <p>IMT 405 Capstone</p>
+        <p>Modibbo Adama University</p>
+        <p class="footer-year">&copy; 2026 Group C</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
