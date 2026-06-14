@@ -30,6 +30,7 @@ Campus Pinboard solves the problem of scattered, easily-missed campus announceme
 | Buhari Haruna Aliyu  | DL/IMT/23D/0164 | 400 Level | Information Management Technology                                                      | Content Lead       |
 | Ibrahim Aliyu        | DL/IMT/21U/0078 | 400 Level | Degree, Information Management Technology, Faculty of Social and Management Sciences   | Team Member        |
 | Auwalu Mohammed      | DL/IMT/23D/0162 | 400 Level | Degree, Information Management and Technology, Faculty of Social Science               | Content Lead       |
+| Abigail Markus Biriya | DL/IMT/23D/0150 | 400 Level | Information Technology Management                                                      | Team Member        |
 
 ## Technologies Used
 
